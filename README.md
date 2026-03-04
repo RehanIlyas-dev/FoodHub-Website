@@ -1,133 +1,248 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JS">
-</p>
+<div align="center">
 
-<h1 align="center">🍔 FoodHub</h1>
-<p align="center"><b>A Modern Restaurant Website & Database Management System</b></p>
-<p align="center">
-  Built for university — polished for the real world.<br>
-  Responsive design • Smooth animations • SQL backend schema
-</p>
+<!-- HEADER -->
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=700&size=45&duration=3000&pause=1000&color=8B0000&center=true&vCenter=true&width=500&height=70&lines=🍔+FoodHub;Taste+The+Difference" alt="FoodHub Typing SVG" />
 
----
+<br>
 
-## 🎯 What is FoodHub?
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=googlefonts&logoColor=white" />
 
-FoodHub is a **multi-page restaurant website** paired with a **relational SQL database**. It simulates a real food-delivery service where customers can browse dishes, place orders, and explore available services — while the database handles user data, inventory, and transactions behind the scenes.
+<br><br>
 
-> **Note:** The frontend and database are designed **independently** as a prototype. The HTML does not query the SQL script directly.
+**A stunning, responsive restaurant website with smooth animations, mobile-first design, and a full SQL database — built from scratch as a university semester project.**
 
----
+<br>
 
-## �️ Live Pages
-
-| # | Page | Description |
-|---|------|-------------|
-| 1 | **Home** (`index.html`) | Hero banner with animated text, featured menu cards with pricing, and a demo order form |
-| 2 | **About** (`about.html`) | Brand story, mission statement, and "Why Choose Us" feature cards |
-| 3 | **Services** (`services.html`) | Service categories — Dine-In, Takeaway, Home Delivery, Catering |
-| 4 | **Contact** (`contact.html`) | Social media links with styled interactive buttons |
-| 5 | **Thank You** (`thankyou.html`) | Order confirmation page with navigation back to home |
+[🏠 Home](#-pages) · [✨ Features](#-features) · [🗄️ Database](#️-database-architecture) · [🚀 Run It](#-quick-start) · [👥 Team](#-the-team)
 
 ---
 
-## ✨ Design Highlights
+</div>
 
-- 🎨 **Warm color palette** — Dark red (`#8b0000`) & gold (`#ffcc80`) branding
-- 🔤 **Premium typography** — Google Fonts: Poppins for body, Playfair Display for headings
-- 📌 **Sticky navbar** — Stays pinned with shadow on scroll
-- 🎭 **Micro-animations** — Fade-in hero text, card hover lifts with background sweeps
-- 📱 **Fully responsive** — Hamburger menu on mobile, fluid cards, adaptive spacing
-- 🎯 **Polished forms** — Focus glow, custom select dropdown arrow, clean input styling
-- 🦶 **Rich footer** — Branded tagline with quick-links navigation
+<br>
 
----
+## 🎯 The Project
 
-## 🗄️ Database Schema
+> *"We didn't just build a website. We built an experience."*
 
-Three normalized tables with full **CRUD** operations:
+**FoodHub** is a fully responsive, multi-page food ordering platform. Customers can browse the menu, explore services, connect on social media, and place demo orders — all wrapped in a **dark-red & gold** themed interface with **premium typography** and **buttery-smooth animations**.
+
+Alongside the frontend, we designed a **normalized SQL database** capable of handling real-world restaurant operations — customers, inventory, and order tracking with complete CRUD functionality.
+
+<br>
+
+## ✨ Features
+
+<table>
+<tr>
+<td width="50%">
+
+### � Design & UX
+- Premium **Playfair Display** headings
+- Clean **Poppins** body text
+- Warm `#8b0000` & `#ffcc80` palette
+- Cards with **background-sweep** hover
+- Fade-in **keyframe animations**
+- Golden **underline accents** on headings
+
+</td>
+<td width="50%">
+
+### ⚡ Technical
+- **Sticky navbar** with scroll shadow
+- **CSS custom properties** throughout
+- Custom **SVG dropdown arrows**
+- **Focus glow** on all form inputs
+- **Hamburger menu** with overlay
+- **Media queries** for all breakpoints
+
+</td>
+</tr>
+</table>
+
+<br>
+
+## 🖥️ Pages
+
+<details>
+<summary><b>🏠 Home</b> — The main attraction</summary>
+<br>
+
+- Full-width **hero section** with layered gradient overlay on background image
+- Staggered **fade-in animations** — heading → subtitle → button
+- **3 menu cards** with emoji icons, descriptions, and PKR pricing
+- Complete **demo order form** — name, phone, food select, quantity, address
+- Styled **CTA button** with hover lift + glow shadow
+
+</details>
+
+<details>
+<summary><b>👨‍🍳 About</b> — Our story</summary>
+<br>
+
+- **Page header** with dark-red gradient overlay
+- Brand story section with constrained readable width
+- **3 feature cards**: Fresh Ingredients 🥬 · Expert Chefs 👨‍🍳 · Quality Service ⭐
+
+</details>
+
+<details>
+<summary><b>🚚 Services</b> — What we offer</summary>
+<br>
+
+- **4 service cards** with emoji decorations:
+  - 🍽️ Dine-In · 🥡 Takeaway · 🚚 Home Delivery · 🎉 Catering
+- Each card lifts on hover with a red tint sweep effect
+
+</details>
+
+<details>
+<summary><b>📞 Contact</b> — Stay connected</summary>
+<br>
+
+- **3 social media buttons**: 📸 Instagram · 👍 Facebook · 🐦 Twitter
+- Outlined style that fills with dark-red on hover
+- Lift animation on interaction
+
+</details>
+
+<details>
+<summary><b>✅ Thank You</b> — Order confirmed</summary>
+<br>
+
+- Large animated ✅ checkmark icon
+- Centered confirmation message
+- **Back to Home** button
+
+</details>
+
+<br>
+
+## 🗄️ Database Architecture
+
+```sql
+-- Three normalized tables powering the backend
+```
 
 ```
-┌─────────────┐     ┌──────────────┐     ┌────────────┐
-│  Customers  │───▶ │    Orders    │ ◀───│ Menu_Items │
-├─────────────┤     ├──────────────┤     ├────────────┤
-│ customer_id │     │ order_id     │     │ item_id    │
-│ full_name   │     │ customer_id  │     │ item_name  │
-│ phone_number│     │ item_id      │     │ price      │
-│ address     │     │ quantity     │     │ category   │
-└─────────────┘     │ total_amount │     └────────────┘
-                    │ order_status │
-                    └──────────────┘
+┌──────────────────┐         ┌──────────────────┐
+│    Customers     │         │    Menu_Items     │
+├──────────────────┤         ├──────────────────┤
+│ customer_id (PK) │───┐     │ item_id (PK)     │──┐
+│ full_name        │   │     │ item_name        │  │
+│ phone_number     │   │     │ price            │  │
+│ address          │   │     │ category         │  │
+└──────────────────┘   │     └──────────────────┘  │
+                       │                            │
+                       ▼                            ▼
+                  ┌──────────────────────────────────┐
+                  │             Orders               │
+                  ├──────────────────────────────────┤
+                  │ order_id (PK)                    │
+                  │ customer_id (FK) ← Customers     │
+                  │ item_id (FK)     ← Menu_Items    │
+                  │ quantity                         │
+                  │ total_amount                     │
+                  │ order_status                     │
+                  └──────────────────────────────────┘
 ```
 
-**Sample queries included:** filtered selects, status updates, price changes, and bulk deletes.
+<details>
+<summary>📋 <b>Sample Queries Included</b></summary>
+<br>
 
----
+| Operation | Example |
+|-----------|---------|
+| **SELECT** | Customers from Lahore, items under Rs. 500, pending orders |
+| **INSERT** | 5 customers, 5 menu items, 5 orders with sample data |
+| **UPDATE** | Change order status, update prices, edit phone numbers |
+| **DELETE** | Remove specific orders, menu items, or customer records |
+
+</details>
+
+<br>
 
 ## 📂 Project Structure
 
 ```
-Restaurant-Website/
+🍔 Restaurant-Website/
 │
-├── index.html              → Home page (menu + order form)
-├── about.html              → About page (story + features)
-├── services.html           → Services page (4 service cards)
-├── contact.html            → Contact page (social links)
-├── thankyou.html            → Confirmation page
+├── 📄 index.html                  ← Home + Order Form
+├── 📄 about.html                  ← Brand Story
+├── 📄 services.html               ← Service Cards
+├── 📄 contact.html                ← Social Links
+├── 📄 thankyou.html               ← Confirmation
 │
-├── assets/
-│   ├── CSS/
-│   │   └── style.css       → Global stylesheet (responsive)
-│   └── Images/
-│       └── hero.jpg        → Hero background image
+├── 📁 assets/
+│   ├── 🎨 CSS/style.css           ← 600+ lines of polish
+│   ├── �️ Images/hero.jpg         ← Hero background
+│   └── �️ Database/Database.sql   ← Schema + Queries
 │
-├── Database.sql            → SQL schema, seed data & queries
-├── Documentation.docx      → Project documentation
-└── README.md               → You are here
+├── 📝 Documentation.docx          ← Full project report
+└── 📋 README.md                   ← You are here ✨
 ```
 
----
+<br>
 
 ## 🚀 Quick Start
 
 ```bash
-# 1. Clone the repo
+# 1️⃣ Clone it
 git clone https://github.com/RehanIlyas-dev/Restaurant-Website.git
 
-# 2. Open in browser
-# Just double-click index.html — no server needed
+# 2️⃣ Open it
+# Just double-click index.html — zero dependencies, zero setup 🎉
 
-# 3. Explore the database
-# Open Database.sql in MySQL Workbench or any SQL editor
+# 3️⃣ Explore the database
+# Open assets/Database/Database.sql in MySQL Workbench
 ```
 
+<br>
+
+## 👥 The Team
+
+<table align="center">
+<tr>
+<td align="center" width="200">
+<br>
+<b>Rehan Ilyas</b>
+<br>
+<sub>2025-CS-65</sub>
+<br><br>
+</td>
+<td align="center" width="200">
+<br>
+<b>Ali Fayyaz</b>
+<br>
+<sub>2025-CS-76</sub>
+<br><br>
+</td>
+<td align="center" width="200">
+<br>
+<b>Muhammad Hassan</b>
+<br>
+<sub>2025-CS-106</sub>
+<br><br>
+</td>
+</tr>
+</table>
+
+<br>
+
 ---
 
-## 🛠️ Built With
+<div align="center">
 
-| Technology | Usage |
-|:-----------|:------|
-| **HTML5** | Semantic structure, SEO meta tags, accessible forms |
-| **CSS3** | Custom properties, Flexbox, transitions, keyframe animations, media queries |
-| **JavaScript** | Mobile navigation toggle |
-| **SQL (MySQL)** | Relational schema design, CRUD operations, sample data |
-| **Google Fonts** | Poppins (body) & Playfair Display (headings) |
+📚 Submitted to **Sir Moazam**
 
----
+Department of Computer Science · **University of Engineering & Technology, Lahore**
 
-## 👥 Contributors
+<br>
 
-| Name | Role |
-|:-----|:-----|
-| **Rehan Ilyas** | Developer |
-| **Ali Fayyaz** | Developer |
-| **Muhammad Hassan** | Developer |
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=400&size=16&duration=4000&pause=2000&color=8B0000&center=true&vCenter=true&width=400&lines=First+Semester+Project+•+2025–2026;Made+with+❤️+by+Team+FoodHub" alt="Footer" />
 
----
-
-<p align="center">
-  Made with ❤️ for university coursework — 2025
-</p>
+</div>
