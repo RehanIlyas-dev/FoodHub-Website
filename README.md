@@ -1,49 +1,69 @@
-# 🍔 FoodHub — Restaurant Website
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JS">
+</p>
 
-A responsive multi-page restaurant website built with **HTML5**, **CSS3**, and **SQL**. FoodHub showcases a modern food-ordering UI paired with a relational database schema for managing customers, menus, and orders.
-
----
-
-## ✨ Features
-
-| Feature | Description |
-| :--- | :--- |
-| **Responsive Design** | Fully responsive layout with a mobile hamburger menu — works on all screen sizes |
-| **Modern Typography** | Google Fonts (Poppins + Playfair Display) for a premium feel |
-| **Sticky Navbar** | Navigation stays fixed at the top while scrolling |
-| **Smooth Animations** | Fade-in hero content, card hover effects with subtle background sweeps |
-| **Demo Order Form** | Functional form with styled inputs, custom select dropdown, and focus states |
-| **SQL Database Schema** | Three normalized tables (Customers, Menu Items, Orders) with full CRUD queries |
+<h1 align="center">🍔 FoodHub</h1>
+<p align="center"><b>A Modern Restaurant Website & Database Management System</b></p>
+<p align="center">
+  Built for university — polished for the real world.<br>
+  Responsive design • Smooth animations • SQL backend schema
+</p>
 
 ---
 
-## 📄 Pages
+## 🎯 What is FoodHub?
 
-| Page | File | Purpose |
-| :--- | :--- | :--- |
-| 🏠 Home | `index.html` | Hero banner, menu highlights, and demo order form |
-| 👨‍🍳 About | `about.html` | Brand story and "Why Choose Us" section |
-| 🚚 Services | `services.html` | Dine-in, Takeaway, Delivery, and Catering |
-| 📞 Contact | `contact.html` | Social media links and contact info |
-| ✅ Thank You | `thankyou.html` | Order confirmation page |
+FoodHub is a **multi-page restaurant website** paired with a **relational SQL database**. It simulates a real food-delivery service where customers can browse dishes, place orders, and explore available services — while the database handles user data, inventory, and transactions behind the scenes.
+
+> **Note:** The frontend and database are designed **independently** as a prototype. The HTML does not query the SQL script directly.
 
 ---
 
-## 🗄️ Database Design
+## �️ Live Pages
 
-The `Database.sql` file contains a complete schema with sample data and queries:
+| # | Page | Description |
+|---|------|-------------|
+| 1 | **Home** (`index.html`) | Hero banner with animated text, featured menu cards with pricing, and a demo order form |
+| 2 | **About** (`about.html`) | Brand story, mission statement, and "Why Choose Us" feature cards |
+| 3 | **Services** (`services.html`) | Service categories — Dine-In, Takeaway, Home Delivery, Catering |
+| 4 | **Contact** (`contact.html`) | Social media links with styled interactive buttons |
+| 5 | **Thank You** (`thankyou.html`) | Order confirmation page with navigation back to home |
+
+---
+
+## ✨ Design Highlights
+
+- 🎨 **Warm color palette** — Dark red (`#8b0000`) & gold (`#ffcc80`) branding
+- 🔤 **Premium typography** — Google Fonts: Poppins for body, Playfair Display for headings
+- 📌 **Sticky navbar** — Stays pinned with shadow on scroll
+- 🎭 **Micro-animations** — Fade-in hero text, card hover lifts with background sweeps
+- 📱 **Fully responsive** — Hamburger menu on mobile, fluid cards, adaptive spacing
+- 🎯 **Polished forms** — Focus glow, custom select dropdown arrow, clean input styling
+- 🦶 **Rich footer** — Branded tagline with quick-links navigation
+
+---
+
+## 🗄️ Database Schema
+
+Three normalized tables with full **CRUD** operations:
 
 ```
-Customers ──┐
-             ├──► Orders
-Menu_Items ──┘
+┌─────────────┐     ┌──────────────┐     ┌────────────┐
+│  Customers  │───▶ │    Orders    │ ◀───│ Menu_Items │
+├─────────────┤     ├──────────────┤     ├────────────┤
+│ customer_id │     │ order_id     │     │ item_id    │
+│ full_name   │     │ customer_id  │     │ item_name  │
+│ phone_number│     │ item_id      │     │ price      │
+│ address     │     │ quantity     │     │ category   │
+└─────────────┘     │ total_amount │     └────────────┘
+                    │ order_status │
+                    └──────────────┘
 ```
 
-- **Customers** — Stores name, phone, and address
-- **Menu_Items** — Categorized items (Fast Food, Italian, Pakistani) with pricing
-- **Orders** — Tracks quantity, total amount, and delivery status
-
-Includes `SELECT`, `INSERT`, `UPDATE`, and `DELETE` query examples.
+**Sample queries included:** filtered selects, status updates, price changes, and bulk deletes.
 
 ---
 
@@ -51,45 +71,63 @@ Includes `SELECT`, `INSERT`, `UPDATE`, and `DELETE` query examples.
 
 ```
 Restaurant-Website/
-├── index.html          # Home page
-├── about.html          # About page
-├── services.html       # Services page
-├── contact.html        # Contact page
-├── thankyou.html       # Order confirmation
+│
+├── index.html              → Home page (menu + order form)
+├── about.html              → About page (story + features)
+├── services.html           → Services page (4 service cards)
+├── contact.html            → Contact page (social links)
+├── thankyou.html            → Confirmation page
+│
 ├── CSS/
-│   └── style.css       # Global stylesheet
+│   └── style.css           → Global stylesheet (responsive)
+│
 ├── Images/
-│   └── hero.jpg        # Hero background image
-├── Database.sql        # SQL schema & queries
-└── Documentation.docx  # Project documentation
+│   └── hero.jpg            → Hero background image
+│
+├── Database.sql            → SQL schema, seed data & queries
+├── Documentation.docx      → Project documentation
+└── README.md               → You are here
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/RehanIlyas-dev/Restaurant-Website.git
-   ```
+```bash
+# 1. Clone the repo
+git clone https://github.com/RehanIlyas-dev/Restaurant-Website.git
 
-2. **Open in browser**
-   Open `index.html` in any modern browser (Chrome, Edge, Firefox).
+# 2. Open in browser
+# Just double-click index.html — no server needed
 
-3. **Review the database**
-   Open `Database.sql` in MySQL Workbench or any SQL editor to explore the schema.
-
----
-
-## 🛠️ Tech Stack
-
-- **HTML5** — Semantic markup with SEO meta tags
-- **CSS3** — Custom properties, Flexbox, transitions, and responsive media queries
-- **SQL** — Relational database design with CRUD operations
-- **Google Fonts** — Poppins & Playfair Display
+# 3. Explore the database
+# Open Database.sql in MySQL Workbench or any SQL editor
+```
 
 ---
 
-## 👥 Team
+## 🛠️ Built With
 
-Created by **Rehan Ilyas**, **Ali Fayyaz**, and **Muhammad Hassan** — 2025
+| Technology | Usage |
+|:-----------|:------|
+| **HTML5** | Semantic structure, SEO meta tags, accessible forms |
+| **CSS3** | Custom properties, Flexbox, transitions, keyframe animations, media queries |
+| **JavaScript** | Mobile navigation toggle |
+| **SQL (MySQL)** | Relational schema design, CRUD operations, sample data |
+| **Google Fonts** | Poppins (body) & Playfair Display (headings) |
+
+---
+
+## 👥 Contributors
+
+| Name | Role |
+|:-----|:-----|
+| **Rehan Ilyas** | Developer |
+| **Ali Fayyaz** | Developer |
+| **Muhammad Hassan** | Developer |
+
+---
+
+<p align="center">
+  Made with ❤️ for university coursework — 2025
+</p>
