@@ -1,29 +1,18 @@
 <div align="center">
 
-<!-- HEADER -->
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=700&size=45&duration=3000&pause=1000&color=8B0000&center=true&vCenter=true&width=500&height=70&lines=🍔+FoodHub;Taste+The+Difference" alt="FoodHub Typing SVG" />
+# 🍔 FoodHub
 
-<br>
+### A Modern Restaurant Website & Ordering System
 
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-<img src="https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=googlefonts&logoColor=white" />
+A stunning, responsive restaurant website with smooth animations, mobile-first design, and a full SQL database — built from scratch as a university semester project.
 
-<br><br>
+`HTML5` `CSS3` `JavaScript` `MySQL` `Google Fonts`
 
-**A stunning, responsive restaurant website with smooth animations, mobile-first design, and a full SQL database — built from scratch as a university semester project.**
-
-<br>
-
-[🏠 Home](#-pages) · [✨ Features](#-features) · [🗄️ Database](#️-database-architecture) · [🚀 Run It](#-quick-start) · [👥 Team](#-the-team)
+[🏠 Pages](#-pages) · [✨ Features](#-features) · [🗄 Database](#-database-architecture) · [🚀 Run It](#-quick-start) · [👥 Team](#-the-team)
 
 ---
 
 </div>
-
-<br>
 
 ## 🎯 The Project
 
@@ -33,47 +22,35 @@
 
 Alongside the frontend, we designed a **normalized SQL database** capable of handling real-world restaurant operations — customers, inventory, and order tracking with complete CRUD functionality.
 
-<br>
+---
 
 ## ✨ Features
 
-<table>
-<tr>
-<td width="50%">
-
-### � Design & UX
-- Premium **Playfair Display** headings
-- Clean **Poppins** body text
-- Warm `#8b0000` & `#ffcc80` palette
-- Cards with **background-sweep** hover
-- Fade-in **keyframe animations**
-- Golden **underline accents** on headings
-
-</td>
-<td width="50%">
+### 🎨 Design & UX
+- Premium **Playfair Display** headings + clean **Poppins** body text
+- Warm `#8b0000` & `#ffcc80` color palette
+- Cards with **background-sweep** hover effect
+- Fade-in **keyframe animations** on hero section
+- Golden **underline accents** on section headings
 
 ### ⚡ Technical
 - **Sticky navbar** with scroll shadow
-- **CSS custom properties** throughout
-- Custom **SVG dropdown arrows**
+- **CSS custom properties** for easy theming
+- Custom **SVG dropdown arrows** on select inputs
 - **Focus glow** on all form inputs
-- **Hamburger menu** with overlay
-- **Media queries** for all breakpoints
+- **Hamburger menu** with dark overlay on mobile
+- **Media queries** for tablet and phone breakpoints
 
-</td>
-</tr>
-</table>
+---
 
-<br>
-
-## 🖥️ Pages
+## 🖥 Pages
 
 <details>
 <summary><b>🏠 Home</b> — The main attraction</summary>
 <br>
 
 - Full-width **hero section** with layered gradient overlay on background image
-- Staggered **fade-in animations** — heading → subtitle → button
+- Staggered **fade-in animations** — heading, subtitle, then button
 - **3 menu cards** with emoji icons, descriptions, and PKR pricing
 - Complete **demo order form** — name, phone, food select, quantity, address
 - Styled **CTA button** with hover lift + glow shadow
@@ -86,7 +63,7 @@ Alongside the frontend, we designed a **normalized SQL database** capable of han
 
 - **Page header** with dark-red gradient overlay
 - Brand story section with constrained readable width
-- **3 feature cards**: Fresh Ingredients 🥬 · Expert Chefs 👨‍🍳 · Quality Service ⭐
+- **3 feature cards**: Fresh Ingredients, Expert Chefs, Quality Service
 
 </details>
 
@@ -94,8 +71,8 @@ Alongside the frontend, we designed a **normalized SQL database** capable of han
 <summary><b>🚚 Services</b> — What we offer</summary>
 <br>
 
-- **4 service cards** with emoji decorations:
-  - 🍽️ Dine-In · 🥡 Takeaway · 🚚 Home Delivery · 🎉 Catering
+- **4 service cards** with emoji decorations
+- Dine-In, Takeaway, Home Delivery, and Catering
 - Each card lifts on hover with a red tint sweep effect
 
 </details>
@@ -104,7 +81,7 @@ Alongside the frontend, we designed a **normalized SQL database** capable of han
 <summary><b>📞 Contact</b> — Stay connected</summary>
 <br>
 
-- **3 social media buttons**: 📸 Instagram · 👍 Facebook · 🐦 Twitter
+- **3 social media buttons**: Instagram, Facebook, Twitter
 - Outlined style that fills with dark-red on hover
 - Lift animation on interaction
 
@@ -114,41 +91,39 @@ Alongside the frontend, we designed a **normalized SQL database** capable of han
 <summary><b>✅ Thank You</b> — Order confirmed</summary>
 <br>
 
-- Large animated ✅ checkmark icon
+- Large animated checkmark icon
 - Centered confirmation message
 - **Back to Home** button
 
 </details>
 
-<br>
+---
 
-## 🗄️ Database Architecture
+## 🗄 Database Architecture
 
-```sql
--- Three normalized tables powering the backend
-```
+Three normalized tables powering the backend:
 
 ```
-┌──────────────────┐         ┌──────────────────┐
-│    Customers     │         │    Menu_Items     │
-├──────────────────┤         ├──────────────────┤
-│ customer_id (PK) │───┐     │ item_id (PK)     │──┐
-│ full_name        │   │     │ item_name        │  │
-│ phone_number     │   │     │ price            │  │
-│ address          │   │     │ category         │  │
-└──────────────────┘   │     └──────────────────┘  │
-                       │                            │
-                       ▼                            ▼
-                  ┌──────────────────────────────────┐
-                  │             Orders               │
-                  ├──────────────────────────────────┤
-                  │ order_id (PK)                    │
-                  │ customer_id (FK) ← Customers     │
-                  │ item_id (FK)     ← Menu_Items    │
-                  │ quantity                         │
-                  │ total_amount                     │
-                  │ order_status                     │
-                  └──────────────────────────────────┘
++-----------------+         +-----------------+
+|   Customers     |         |   Menu_Items    |
++-----------------+         +-----------------+
+| customer_id PK  |---+     | item_id PK     |--+
+| full_name       |   |     | item_name      |  |
+| phone_number    |   |     | price          |  |
+| address         |   |     | category       |  |
++-----------------+   |     +-----------------+  |
+                      |                          |
+                      v                          v
+              +-------------------------------+
+              |           Orders              |
+              +-------------------------------+
+              | order_id PK                   |
+              | customer_id FK -> Customers   |
+              | item_id FK     -> Menu_Items  |
+              | quantity                      |
+              | total_amount                  |
+              | order_status                  |
+              +-------------------------------+
 ```
 
 <details>
@@ -164,85 +139,64 @@ Alongside the frontend, we designed a **normalized SQL database** capable of han
 
 </details>
 
-<br>
+---
 
 ## 📂 Project Structure
 
 ```
-🍔 Restaurant-Website/
-│
-├── 📄 index.html                  ← Home + Order Form
-├── 📄 about.html                  ← Brand Story
-├── 📄 services.html               ← Service Cards
-├── 📄 contact.html                ← Social Links
-├── 📄 thankyou.html               ← Confirmation
-│
-├── 📁 assets/
-│   ├── 🎨 CSS/style.css           ← 600+ lines of polish
-│   ├── �️ Images/hero.jpg         ← Hero background
-│   └── �️ Database/Database.sql   ← Schema + Queries
-│
-├── 📝 Documentation.docx          ← Full project report
-└── 📋 README.md                   ← You are here ✨
+Restaurant-Website/
+|
+|-- index.html                    Home + Order Form
+|-- about.html                    Brand Story
+|-- services.html                 Service Cards
+|-- contact.html                  Social Links
+|-- thankyou.html                 Confirmation
+|
+|-- assets/
+|   |-- CSS/
+|   |   +-- style.css             600+ lines of polish
+|   |-- Images/
+|   |   +-- hero.jpg              Hero background
+|   +-- Database/
+|       +-- Database.sql          Schema + Queries
+|
+|-- Documentation.docx            Full project report
++-- README.md                     You are here
 ```
 
-<br>
+---
 
 ## 🚀 Quick Start
 
 ```bash
-# 1️⃣ Clone it
+# Clone it
 git clone https://github.com/RehanIlyas-dev/Restaurant-Website.git
 
-# 2️⃣ Open it
-# Just double-click index.html — zero dependencies, zero setup 🎉
+# Open it — just double-click index.html
+# Zero dependencies, zero setup!
 
-# 3️⃣ Explore the database
+# Explore the database
 # Open assets/Database/Database.sql in MySQL Workbench
 ```
 
-<br>
+---
 
 ## 👥 The Team
 
-<table align="center">
-<tr>
-<td align="center" width="200">
-<br>
-<b>Rehan Ilyas</b>
-<br>
-<sub>2025-CS-65</sub>
-<br><br>
-</td>
-<td align="center" width="200">
-<br>
-<b>Ali Fayyaz</b>
-<br>
-<sub>2025-CS-76</sub>
-<br><br>
-</td>
-<td align="center" width="200">
-<br>
-<b>Muhammad Hassan</b>
-<br>
-<sub>2025-CS-106</sub>
-<br><br>
-</td>
-</tr>
-</table>
+| Name | Roll Number |
+|:-----|:------------|
+| **Rehan Ilyas** | 2025-CS-65 |
+| **Ali Fayyaz** | 2025-CS-76 |
+| **Muhammad Hassan** | 2025-CS-106 |
 
-<br>
+> 📚 Submitted to **Sir Moazam** · Department of Computer Science · **UET Lahore**
 
 ---
 
 <div align="center">
 
-📚 Submitted to **Sir Moazam**
+**First Semester Project · 2025–2026**
 
-Department of Computer Science · **University of Engineering & Technology, Lahore**
-
-<br>
-
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=400&size=16&duration=4000&pause=2000&color=8B0000&center=true&vCenter=true&width=400&lines=First+Semester+Project+•+2025–2026;Made+with+❤️+by+Team+FoodHub" alt="Footer" />
+Made with ❤️ by Team FoodHub
 
 </div>
