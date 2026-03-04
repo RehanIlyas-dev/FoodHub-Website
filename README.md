@@ -1,74 +1,95 @@
-<h1>🍔 FoodHub</h1>
-<h3>Restaurant Management System Prototype</h3>
+# 🍔 FoodHub — Restaurant Website
 
-<p>
-  A responsive frontend interface paired with a theoretical SQL database design for a modern food delivery service.
-  <br>
-  <br>
-  <b>HTML5</b> • <b>CSS3</b> • <b>SQL</b>
-</p>
+A responsive multi-page restaurant website built with **HTML5**, **CSS3**, and **SQL**. FoodHub showcases a modern food-ordering UI paired with a relational database schema for managing customers, menus, and orders.
 
 ---
 
-## 📖 Project Overview
+## ✨ Features
 
-**FoodHub** serves as a dual-purpose prototype demonstrating both web design and database management skills:
-1.  **The Frontend:** A visually engaging, multi-page website allowing users to browse menus and place demo orders.
-2.  **The Backend (Design):** A relational database schema capable of handling customers, menu inventories, and order transactions.
-
-> **Note:** This project demonstrates the *design* of both systems. The HTML frontend is currently standalone and does not actively query the SQL script.
+| Feature | Description |
+| :--- | :--- |
+| **Responsive Design** | Fully responsive layout with a mobile hamburger menu — works on all screen sizes |
+| **Modern Typography** | Google Fonts (Poppins + Playfair Display) for a premium feel |
+| **Sticky Navbar** | Navigation stays fixed at the top while scrolling |
+| **Smooth Animations** | Fade-in hero content, card hover effects with subtle background sweeps |
+| **Demo Order Form** | Functional form with styled inputs, custom select dropdown, and focus states |
+| **SQL Database Schema** | Three normalized tables (Customers, Menu Items, Orders) with full CRUD queries |
 
 ---
 
-## 🌟 Key Features
+## 📄 Pages
 
-### 💻 Web Interface (Frontend)
-The user experience is spread across five distinct pages:
-
-* **🏠 Home & Ordering:** Features a Hero section, a highlighted menu (Burger, Pizza, Biryani), and a functional demo order form.
-* **🚚 Services:** detailed showcase of operational models including Dine-In, Takeaway, Home Delivery, and Catering.
-* **👨‍🍳 Brand Identity:** An "About Us" section emphasizing quality through "Fresh Ingredients" and "Expert Chefs".
-* **📞 Engagement:** A Contact page linking to social media platforms.
-* **✅ Feedback:** A dedicated confirmation page verifying successful order submissions.
-
-### 🗄️ Database Logic (Backend Design)
-The SQL architecture handles the data requirements via three normalized tables:
-
-| Table Name | Function | Key Attributes |
+| Page | File | Purpose |
 | :--- | :--- | :--- |
-| **`Customers`** | User Management | Stores Name, Phone, and Address. |
-| **`Menu_Items`** | Inventory | Categorizes items (e.g., Fast Food, Italian) and prices. |
-| **`Orders`** | Transactions | Tracks Order IDs, Quantities, and Status (Pending/Delivered). |
+| 🏠 Home | `index.html` | Hero banner, menu highlights, and demo order form |
+| 👨‍🍳 About | `about.html` | Brand story and "Why Choose Us" section |
+| 🚚 Services | `services.html` | Dine-in, Takeaway, Delivery, and Catering |
+| 📞 Contact | `contact.html` | Social media links and contact info |
+| ✅ Thank You | `thankyou.html` | Order confirmation page |
 
 ---
 
-## 📂 Project Components
+## 🗄️ Database Design
 
-A concise overview of the file organization:
+The `Database.sql` file contains a complete schema with sample data and queries:
 
-* `index.html` — **Main Landing Page**
-* `services.html` — **Service Listings**
-* `about.html` — **Company Information**
-* `contact.html` — **Contact Details**
-* `thankyou.html` — **Submission Success Page**
-* `css/style.css` — **Global Styling Sheet**
-* `database/foodhub.sql` — **Database Schema & CRUD Scripts**
+```
+Customers ──┐
+             ├──► Orders
+Menu_Items ──┘
+```
 
----
+- **Customers** — Stores name, phone, and address
+- **Menu_Items** — Categorized items (Fast Food, Italian, Pakistani) with pricing
+- **Orders** — Tracks quantity, total amount, and delivery status
 
-## 🚀 Usage Instructions
-
-1.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/your-username/foodhub-project.git](https://github.com/your-username/foodhub-project.git)
-    ```
-
-2.  **Run the Website:**
-    Simply open `index.html` in any modern web browser (Chrome, Edge, Firefox) to navigate the UI.
-
-3.  **Review the Database:**
-    Open `database/foodhub.sql` in a text editor or SQL environment (like MySQL Workbench) to review the backend structure and queries.
+Includes `SELECT`, `INSERT`, `UPDATE`, and `DELETE` query examples.
 
 ---
 
-<p align="center">Created by [Rehan Ilyas - Ali Fayyaz - Muhammad Hassan] • 2026</p>
+## 📂 Project Structure
+
+```
+Restaurant-Website/
+├── index.html          # Home page
+├── about.html          # About page
+├── services.html       # Services page
+├── contact.html        # Contact page
+├── thankyou.html       # Order confirmation
+├── CSS/
+│   └── style.css       # Global stylesheet
+├── Images/
+│   └── hero.jpg        # Hero background image
+├── Database.sql        # SQL schema & queries
+└── Documentation.docx  # Project documentation
+```
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/RehanIlyas-dev/Restaurant-Website.git
+   ```
+
+2. **Open in browser**
+   Open `index.html` in any modern browser (Chrome, Edge, Firefox).
+
+3. **Review the database**
+   Open `Database.sql` in MySQL Workbench or any SQL editor to explore the schema.
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5** — Semantic markup with SEO meta tags
+- **CSS3** — Custom properties, Flexbox, transitions, and responsive media queries
+- **SQL** — Relational database design with CRUD operations
+- **Google Fonts** — Poppins & Playfair Display
+
+---
+
+## 👥 Team
+
+Created by **Rehan Ilyas**, **Ali Fayyaz**, and **Muhammad Hassan** — 2025

@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Order Submitted</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodHub | Order Submitted</title>
   <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
 
-<section class="section">
-  <h2>Thank You!</h2>
-  <p>Your demo order has been submitted successfully.</p>
-  <p>This order is for project demonstration only.</p>
-  <a href="index.html" class="btn">Back to Home</a>
-</section>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h1 class="logo">FoodHub</h1>
+    <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </div>
+    <ul id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-overlay" id="navOverlay" onclick="toggleMenu()"></div>
+  </nav>
+
+  <section class="section thankyou-section">
+    <div class="thankyou-icon">✅</div>
+    <h2>Thank You!</h2>
+    <p>Your demo order has been submitted successfully.</p>
+    <p>This order is for project demonstration purposes only.</p>
+    <a href="index.html" class="btn">Back to Home</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p class="footer-tagline">FoodHub</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 FoodHub Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('open');
+      document.getElementById('navOverlay').classList.toggle('open');
+    }
+  </script>
 
 </body>
+
 </html>

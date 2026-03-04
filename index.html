@@ -1,90 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="FoodHub — Delicious food delivered to your doorstep. Explore our menu of burgers, pizzas, biryanis, and more. Order online today!">
   <title>FoodHub | Home</title>
   <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <h1 class="logo">FoodHub</h1>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- HERO SECTION -->
-<section class="hero">
-  <h2>Delicious Food, Great Taste</h2>
-  <p>Fresh meals prepared by expert chefs</p>
-  <a href="#menu" class="btn">View Menu</a>
-</section>
-
-
-
-<!-- MENU SECTION -->
-<section class="section" id="menu">
-  <h2>Our Menu</h2>
-  <p>Explore our delicious demo menu items</p>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Chicken Burger</h3>
-      <p>Juicy grilled chicken with fresh lettuce</p>
-      <strong>Rs. 450</strong>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h1 class="logo">FoodHub</h1>
+    <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
     </div>
+    <ul id="navMenu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-overlay" id="navOverlay" onclick="toggleMenu()"></div>
+  </nav>
 
-    <div class="card">
-      <h3>Cheese Pizza</h3>
-      <p>Loaded with mozzarella & toppings</p>
-      <strong>Rs. 1200</strong>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h2>Delicious Food, Great Taste</h2>
+    <p>Fresh meals prepared daily by expert chefs — served with love</p>
+    <a href="#menu" class="btn">Explore Our Menu</a>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section class="section" id="menu">
+    <h2>Our Menu</h2>
+    <p>Hand-picked favourites loved by our customers</p>
+
+    <div class="cards">
+      <div class="card">
+        <span class="card-icon">🍔</span>
+        <h3>Chicken Burger</h3>
+        <p>Juicy grilled chicken with fresh lettuce &amp; house sauce</p>
+        <strong>Rs. 450</strong>
+      </div>
+
+      <div class="card">
+        <span class="card-icon">🍕</span>
+        <h3>Cheese Pizza</h3>
+        <p>Loaded with mozzarella, toppings &amp; our secret herb blend</p>
+        <strong>Rs. 1200</strong>
+      </div>
+
+      <div class="card">
+        <span class="card-icon">🍛</span>
+        <h3>Chicken Biryani</h3>
+        <p>Traditional spicy Pakistani biryani with raita</p>
+        <strong>Rs. 350</strong>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Chicken Biryani</h3>
-      <p>Traditional spicy Pakistani biryani</p>
-      <strong>Rs. 350</strong>
+  <!-- DEMO ORDER SECTION -->
+  <section class="section">
+    <h2>Place a Demo Order</h2>
+    <p>This is a demo order form for project demonstration purposes only.</p>
+
+    <form class="order-form" action="thankyou.html" method="get">
+      <input type="text" id="fullName" placeholder="Full Name" required>
+      <input type="tel" id="phone" placeholder="Phone Number (03XXXXXXXXX)" required>
+
+      <select id="foodItem" required>
+        <option value="">Select Food Item</option>
+        <option>Chicken Burger</option>
+        <option>Cheese Pizza</option>
+        <option>Chicken Biryani</option>
+        <option>Pasta Alfredo</option>
+      </select>
+
+      <input type="number" id="quantity" placeholder="Quantity" min="1" max="10" required>
+      <textarea id="address" rows="4" placeholder="Delivery Address"></textarea>
+
+      <button type="submit" class="btn">Place Order</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p class="footer-tagline">FoodHub</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 FoodHub Restaurant. All rights reserved.</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- DEMO ORDER SECTION -->
-<section class="section">
-  <h2>Place a Demo Order</h2>
-  <p>
-    This is a demo order form for project demonstration purposes only.
-  </p>
-
-  <form class="order-form" action="thankyou.html" method="get">
-    <input type="text" placeholder="Full Name" required>
-
-    <input type="tel" placeholder="Phone Number (03XXXXXXXXX)" required>
-
-    <select required>
-      <option value="">Select Food Item</option>
-      <option>Burger</option>
-      <option>Pizza</option>
-      <option>Biryani</option>
-      <option>Pasta</option>
-    </select>
-
-    <input type="number" placeholder="Quantity" min="1" max="10" required>
-
-    <textarea rows="4" placeholder="Delivery Address"></textarea>
-
-    <button type="submit" class="btn">Place Order</button>
-  </form>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2025 FoodHub Restaurant</p>
-</footer>
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('open');
+      document.getElementById('navOverlay').classList.toggle('open');
+    }
+  </script>
 
 </body>
+
 </html>

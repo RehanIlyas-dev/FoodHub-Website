@@ -1,60 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explore FoodHub's services — dine-in, takeaway, home delivery, and professional catering for events and parties.">
   <title>FoodHub | Services</title>
   <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <h1 class="logo">FoodHub</h1>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- PAGE HEADER -->
-<section class="page-header">
-  <h2>Our Services</h2>
-  <p>What we offer to our customers</p>
-</section>
-
-<!-- SERVICES SECTION -->
-<section class="section">
-  <h2>Food & Services</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Dine-In</h3>
-      <p>Enjoy fresh meals in a comfortable and clean environment.</p>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h1 class="logo">FoodHub</h1>
+    <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
     </div>
+    <ul id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-overlay" id="navOverlay" onclick="toggleMenu()"></div>
+  </nav>
 
-    <div class="card">
-      <h3>Takeaway</h3>
-      <p>Quick takeaway service for customers on the go.</p>
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <h2>Our Services</h2>
+    <p>What we offer to our customers</p>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="section">
+    <h2>Food &amp; Services</h2>
+
+    <div class="cards">
+      <div class="card">
+        <span class="card-icon">🍽️</span>
+        <h3>Dine-In</h3>
+        <p>Enjoy fresh meals in a comfortable, clean, and welcoming environment with family and friends.</p>
+      </div>
+
+      <div class="card">
+        <span class="card-icon">🥡</span>
+        <h3>Takeaway</h3>
+        <p>Quick and convenient takeaway service for customers on the go — ready in minutes.</p>
+      </div>
+
+      <div class="card">
+        <span class="card-icon">🚚</span>
+        <h3>Home Delivery</h3>
+        <p>Fast delivery of hot, delicious food straight to your doorstep — anywhere in the city.</p>
+      </div>
+
+      <div class="card">
+        <span class="card-icon">🎉</span>
+        <h3>Catering</h3>
+        <p>Professional catering services for weddings, corporate events, and private parties.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Home Delivery</h3>
-      <p>Fast delivery of hot and delicious food at your doorstep.</p>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p class="footer-tagline">FoodHub</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 FoodHub Restaurant. All rights reserved.</p>
     </div>
+  </footer>
 
-    <div class="card">
-      <h3>Catering</h3>
-      <p>Professional catering services for events and parties.</p>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2025 FoodHub Restaurant</p>
-</footer>
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('open');
+      document.getElementById('navOverlay').classList.toggle('open');
+    }
+  </script>
 
 </body>
+
 </html>
