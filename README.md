@@ -78,11 +78,11 @@ Restaurant-Website/
 ├── contact.html            → Contact page (social links)
 ├── thankyou.html            → Confirmation page
 │
-├── CSS/
-│   └── style.css           → Global stylesheet (responsive)
-│
-├── Images/
-│   └── hero.jpg            → Hero background image
+├── assets/
+│   ├── CSS/
+│   │   └── style.css       → Global stylesheet (responsive)
+│   └── Images/
+│       └── hero.jpg        → Hero background image
 │
 ├── Database.sql            → SQL schema, seed data & queries
 ├── Documentation.docx      → Project documentation
